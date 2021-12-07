@@ -1,0 +1,17 @@
+# chainmap is a dictionary like for creating a single view of multiple mappings
+from collections import ChainMap
+
+a = {1: 'ai', 2: 'python'}
+b = {3: 'ml', 4: 'sec'}
+al = ChainMap(a, b)
+print(al)
+
+# counter is a dictionary subclass for counting hashable objects
+from collections import Counter
+a = [1,1,2,3,4,5,5,5,4,5,6,6]
+c = Counter(a)
+print(c)
+print(list(c.elements()))
+print(c.most_common())
+c.subtract({2:1, 5:2})
+print(c)
