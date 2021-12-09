@@ -1,0 +1,31 @@
+from turtle import *
+
+
+def pattern(clr1, clr2):
+    width(2)
+    color("black", clr1)
+    begin_fill()
+    circle(100, 180)
+    circle(200, 180)
+    left(180)
+    circle(-100, 180)
+    end_fill()
+    left(90)
+    up()
+    forward(200*0.35)
+    right(90)
+    down()
+    color(clr1, clr2)
+    begin_fill()
+    circle(200*0.20)
+    end_fill()
+    left(90)
+    up()
+    backward(200*0.35)
+    down()
+    left(90)
+
+reset()
+pattern("black", "white")
+pattern("white", "black")
+mainloop()
