@@ -1,0 +1,15 @@
+import turtle
+
+turtle.pensize(5)
+turtle.speed(1)
+turtle.color("green")
+turtle.begin_fill()
+turtle.fillcolor("red")
+turtle.left(130)
+turtle.forward(200)
+turtle.circle(-70, 180)
+turtle.setheading(60)
+turtle.circle(-70, 180)
+turtle.forward(200)
+turtle.end_fill()
+turtle.mainloop()
